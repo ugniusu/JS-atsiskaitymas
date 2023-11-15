@@ -181,23 +181,22 @@
 // }
 
 // 8 uzduotis
-// const admin = false;
-// const online = true;
-// const user = true;
-// const skelbimas = false;
+const online = true;
+const type = "admin";
+const isOwner = true;
 
-// if (online) {
-//   if (admin) {
-//     console.log("Adminas gali patvirtinti")
-//   } else if (user && skelbimas){
-//     console.log("Vartotojas gali sukurti is istrinti skelbima")
-//   }
-//   else {
-//     console.log("Vartotojas neturi skelbimo")
-//   }
-// } else {
-//   console.log ("Turi pirma prisijungti")
-// }
+if (online) {
+  if (type === "admin") {
+    console.log("Adminas gali patvirtinti")
+  } else if (isOwner){
+    console.log("Gali sukurti is istrinti skelbima")
+  }
+  else {
+    console.log("Negali redaguoti")
+  }
+} else {
+  console.log ("Turi pirma prisijungti")
+}
 
 // 9 uzduotis
 
